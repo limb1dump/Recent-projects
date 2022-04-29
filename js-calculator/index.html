@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="container">
+            <div class="calc">
+                <div class="calc__display-border">
+                </div>
+                <div class="calc__display">
+                    <input type="text" class="calc__input-result" value="0" disabled>
+                </div>
+                <div class="calc__display-border">
+                </div>
+                <div class="calc__body">
+                    <div class="calc__row">
+                        <div class="calc__button calc__button_c">
+                            <div class="calc__input ">
+                                C
+                            </div>
+                        </div>
+                        <div class="calc__button calc__button_plus-min">
+                            <div class="calc__input">
+                                +/-
+                            </div>
+                        </div>
+                        <div class="calc__button">
+                            <div class="calc__input calc__button_eucklid">
+                                %
+                            </div>
+                        </div>
+                        <div class="calc__button calc__button_root">
+                            <div class="calc__input">
+                                √
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calc__row">
+                        <div class="calc__button calc__button_7">
+                            <div class="calc__input">
+                                7
+                            </div>
+                        </div>
+                        <div class="calc__button calc__button_8">
+                            <div class="calc__input">
+                                8
+                            </div>
+                        </div>
+                        <div class="calc__button calc__button_9">
+                            <div class="calc__input">
+                                9
+                            </div>
+                        </div>
+                        <div class="calc__button calc__button_division">
+                            <div class="calc__input">
+                                /
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calc__row">
+                        <div class="calc__button calc__button_4">
+                            <div class="calc__input">
+                                4
+                            </div>
+                        </div>
+                        <div class="calc__button calc__button_5">
+                            <div class="calc__input">
+                                5
+                            </div>
+                        </div>
+                        <div class="calc__button calc__button_6">
+                            <div class="calc__input">
+                                6
+                            </div>
+                        </div>
+                        <div class="calc__button calc__button_x">
+                            <div class="calc__input">
+                                x
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calc__row">
+                        <div class="calc__button calc__button_1">
+                            <div class="calc__input">
+                                1
+                            </div>
+                        </div>
+                        <div class="calc__button calc__button_2">
+                            <div class="calc__input">
+                                2
+                            </div>
+                        </div>
+                        <div class="calc__button calc__button_3">
+                            <div class="calc__input">
+                                3
+                            </div>
+                        </div>
+                        <div class="calc__button calc__button_minus">
+                            <div class="calc__input">
+                                -
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calc__row">
+                        <div class="calc__button calc__button_0">
+                            <div class="calc__input">
+                                0
+                            </div>
+                        </div>
+                        <div class="calc__button calc__button_dot">
+                            <div class="calc__input">
+                                .
+                            </div>
+                        </div>
+                        <div class="calc__button calc__button_equal">
+                            <div class="calc__input">
+                                =
+                            </div>
+                        </div>
+                        <div class="calc__button calc__button_plus">
+                            <div class="calc__input">
+                                +
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sound-on">
+                sound off
+            </div>
+            <div class="sound-off on">
+                sound on
+            </div>
+        </div>
+    </div>
+    <audio class="sound-beep" src="audio/beep.mp3"></audio>
+    <script src="js/script2.js"></script>
+</body>
+
+</html>
