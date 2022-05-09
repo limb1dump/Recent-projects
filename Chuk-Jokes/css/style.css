@@ -1,0 +1,165 @@
+/*reset*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+/*--------------------*/
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    background: linear-gradient(180deg, #191518 0%, #161415 100%);
+    font-family: 'DM Mono', monospace;
+}
+
+.content {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.header {
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.display {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.display__row {
+    padding: 15px;
+    min-width: 300px;
+    max-width: 600px;
+    min-height: 50px;
+    background: linear-gradient(180deg, #3b5f38 0%, #487636 100%);
+}
+
+.display__text {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-style: italic;
+    line-height: 40px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.button__submit {
+    background: linear-gradient(180deg, #82a04e 0%, #253e4b 100%);
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    padding: 10px 25px 10px 25px;
+    transition-duration: 1s;
+}
+
+.button__submit:hover {
+    cursor: pointer;
+    background: linear-gradient(180deg, #718c44 0%, #345668 100%);
+    transition-duration: 0.2s;
+}
+
+.button__submit:active {
+    cursor: pointer;
+    background: linear-gradient(180deg, #718c44 0%, #345668 100%);
+    transition-duration: 0.03s;
+    box-shadow: inset 3px 3px 30px 10px rgb(35, 78, 57);
+}
