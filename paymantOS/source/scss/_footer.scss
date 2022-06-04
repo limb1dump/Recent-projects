@@ -1,0 +1,139 @@
+.footer-body {
+    background: $blackTextColor;
+}
+
+.footer {
+    padding: 97px 0 80px 0;
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        @include fontWeight(400);
+        font-size: 14px;
+        line-height: 24px;
+        color: $whiteTextColor;
+    }
+
+    &__copy {
+        max-width: 347px;
+    }
+
+    &__title {
+        @include fontWeight(800);
+        font-size: 18px;
+        line-height: 18px;
+        margin-bottom: 20px;
+    }
+
+    &__subtitle {
+        letter-spacing: 0.1px;
+        margin-bottom: 96px;
+    }
+
+    &__copy-info {
+        color: $evenLighterGreyTextColor;
+        line-height: 14px;
+        margin-bottom: 7px;
+    }
+
+    &__copy-date {
+        color: $evenLighterGreyTextColor;
+        line-height: 14px;
+    }
+
+}
+
+.form {
+    position: relative;
+    max-width: 344px;
+
+    &__title {
+        @include fontWeight(600);
+        font-size: 16px;
+        line-height: 16px;
+        margin-bottom: 12px;
+    }
+
+    &__label {
+        display: flex;
+        border-radius: 4px;
+        background: $whiteTextColor;
+        position: relative;
+        margin-bottom: 10px;
+    }
+
+    &__input {
+        color: $blackTextColor;
+        line-height: 14px;
+        padding: 21px 60px 21px 23px;
+        width: 100%;
+        border-radius: 4px;
+
+        &::placeholder {
+            letter-spacing: 0.5px;
+            line-height: 14px;
+            color: $lightGreyTextColor;
+        }
+
+        &:focus {
+            outline: 1px solid $blueBgColor;
+        }
+    }
+
+    &__button {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        display: flex;
+        align-items: center;
+        border-radius: 4px;
+        background: $blueBgColor;
+        padding: 13.25px 0;
+        padding-left: 13.25px;
+        min-width: 40px;
+        min-height: 40px;
+
+        &:hover {
+            background: $darkenBlueBgColor;
+            transition: 0.3s all ease;
+        }
+    }
+
+    &__subtitle {
+        margin-bottom: 34px;
+        letter-spacing: 0.1px;
+    }
+
+    &__social {
+        display: flex;
+        justify-content: space-between;
+        max-width: 292px;
+        padding-left: 2px;
+
+        &:first-child {
+            background: $blueBgColor;
+        }
+    }
+
+    &__social-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $greyTextColor;
+        min-width: 50px;
+        min-height: 50px;
+        border-radius: 50%;
+
+        &_margin {
+            margin-top: -2px;
+            padding-left: 2px;
+        }
+
+        &:hover {
+            background: $blueBgColor;
+            transition: 0.2s all ease;
+        }
+
+        transition: 0.2s all ease;
+    }
+}

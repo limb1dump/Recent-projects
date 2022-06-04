@@ -1,0 +1,52 @@
+.third-section {
+    background: $greyBgColor;
+}
+
+
+.client {
+    padding: 50px 0;
+
+    &__title {
+        text-align: center;
+        @include fontWeight(700);
+        font-size: 28px;
+        line-height: 28px;
+        color: $blackTextColor;
+        margin-bottom: 46px;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+
+        &_new-gap {
+            padding: 0 92px;
+            justify-content: space-between;
+            margin-bottom: 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding-right: 20px;
+
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+
+    &__name {
+        white-space: nowrap;
+        @include fontWeight(600);
+        font-size: 14px;
+        line-height: 14px;
+        color: $blackTextColor;
+    }
+}

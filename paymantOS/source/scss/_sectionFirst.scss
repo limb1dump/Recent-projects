@@ -1,0 +1,109 @@
+.first-section {
+    position: relative;
+
+    &__img {
+        position: absolute;
+        top: -100px;
+        right: 0px;
+        z-index: 0;
+    }
+}
+
+.dao {
+    position: relative;
+    z-index: 1;
+
+    &__main-title {
+        @include fontWeight(700);
+        font-size: 48px;
+        line-height: 62px;
+        color: $blackTextColor;
+        max-width: 387px;
+        margin-bottom: 15px;
+    }
+
+    &__subtitle {
+        font-size: 14px;
+        line-height: 24px;
+        color: $lightGreyTextColor;
+        margin-bottom: 62px;
+        letter-spacing: 0.1px;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 22px;
+    }
+
+    &__item {
+        color: $blueBgColor;
+        margin-bottom: 130px;
+
+        &:first-child {
+            min-width: 144px;
+            min-height: 40px;
+            margin-left: 1px;
+            color: $whiteTextColor;
+            background: $blueBgColor;
+            border-radius: 4px;
+            padding: 13px 0;
+
+
+            &:hover {
+                background-color: $darkenBlueBgColor;
+
+                img {
+                    transform: translate(3px, -3px);
+                    transition: 0.3s all ease;
+                }
+            }
+
+            transition: 0.2s all ease;
+        }
+
+        &:last-child:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__link-item {
+        padding-left: 23px;
+    }
+
+    &__link-img {
+        padding-left: 6px;
+    }
+
+    &__subsubtitle {
+        @include fontWeight(400);
+        color: $lightGreyTextColor;
+        font-size: 14px;
+        line-height: 24px;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+    }
+
+    &__numbers-row {
+        display: flex;
+        gap: 80px;
+        margin-bottom: 196px;
+    }
+
+    &__numbers-daos {
+        @include fontWeight(400);
+    }
+
+    &__count {
+        font-size: 36px;
+        line-height: 36px;
+        margin-bottom: 12px;
+    }
+
+    &__name {
+        font-size: 14px;
+        line-height: 14px;
+        text-transform: uppercase;
+        color: $greyTextColor;
+    }
+}

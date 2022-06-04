@@ -1,0 +1,22 @@
+// breakepoints
+$breakepoint1200: 1199.98 + px;
+$breakepoint992: 991.98 + px;
+$breakepoint768: 767.98 + px;
+$breakepoint480: 479.98 + px;
+
+
+// colors
+$greyTextColor: #5E5C6C;
+$lightGreyTextColor :#9998A4;
+$blackTextColor: #232427;
+$whiteTextColor: #FFFFFF;
+$blueBgColor: #2962EF;
+$darkenBlueBgColor: rgb(41, 83, 189);
+$greyBgColor: #FAF9FA;
+$lightGreyBorder: #EFEFF4;
+$evenLighterGreyTextColor: #D6D5DF;
+
+
+@mixin fontWeight ($weight) {
+    font-weight: $weight;
+}
