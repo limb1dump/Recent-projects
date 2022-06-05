@@ -6,6 +6,14 @@
 
     &__menu {
         margin-bottom: 100px;
+
+        @media (max-width: $breakepoint768) {
+            margin-bottom: 50px;
+        }
+
+        @media (max-width: $breakepoint480) {
+            margin-bottom: 25px;
+        }
     }
 }
 
@@ -24,6 +32,10 @@
         display: flex;
         align-items: center;
         gap: 50px;
+
+        @media (max-width: $breakepoint768) {
+            gap: 25px;
+        }
     }
 
     &__item {
@@ -64,5 +76,9 @@
             margin-right: 3px;
             margin-top: -3px;
         }
+    }
+
+    @media (max-width: $breakepoint480) {
+        visibility: hidden;
     }
 }

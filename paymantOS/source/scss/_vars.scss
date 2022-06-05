@@ -16,7 +16,7 @@ $greyBgColor: #FAF9FA;
 $lightGreyBorder: #EFEFF4;
 $evenLighterGreyTextColor: #D6D5DF;
 
-
+// mixins
 @mixin fontWeight ($weight) {
     font-weight: $weight;
 }

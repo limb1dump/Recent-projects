@@ -5,13 +5,28 @@
 .footer {
     padding: 97px 0 80px 0;
 
+    @media (max-width: $breakepoint768) {
+        padding: 60px 0 50px 0;
+    }
+
+    @media (max-width: $breakepoint480) {
+        padding: 35px 0 25px 0;
+    }
+
     &__row {
         display: flex;
+        gap: 10px;
         justify-content: space-between;
         @include fontWeight(400);
         font-size: 14px;
         line-height: 24px;
         color: $whiteTextColor;
+
+        @media (max-width: $breakepoint768) {
+            flex-wrap: wrap;
+            justify-content: center;
+            row-gap: 40px;
+        }
     }
 
     &__copy {
@@ -28,6 +43,10 @@
     &__subtitle {
         letter-spacing: 0.1px;
         margin-bottom: 96px;
+
+        @media (max-width: $breakepoint768) {
+            margin-bottom: 20px;
+        }
     }
 
     &__copy-info {

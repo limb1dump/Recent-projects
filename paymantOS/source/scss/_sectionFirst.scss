@@ -6,6 +6,29 @@
         top: -100px;
         right: 0px;
         z-index: 0;
+        width: 100%;
+        max-width: 863px;
+
+        @media (max-width: $breakepoint1200) {
+            max-width: 700px;
+            top: -100px;
+        }
+
+        @media (max-width: $breakepoint992) {
+            max-width: 700px;
+            top: -100px;
+        }
+
+        @media (max-width: $breakepoint768) {
+            max-width: 500px;
+            top: -30px;
+        }
+
+
+        @media (max-width: $breakepoint480) {
+            max-width: 400px;
+            top: -30px;
+        }
     }
 }
 
@@ -20,6 +43,17 @@
         color: $blackTextColor;
         max-width: 387px;
         margin-bottom: 15px;
+
+        @media (max-width: $breakepoint768) {
+            font-size: 40px;
+            line-height: 52px;
+        }
+
+        @media (max-width: $breakepoint480) {
+            font-size: 36px;
+            line-height: 42px;
+            max-width: 300px;
+        }
     }
 
     &__subtitle {
@@ -28,17 +62,39 @@
         color: $lightGreyTextColor;
         margin-bottom: 62px;
         letter-spacing: 0.1px;
+
+        @media (max-width: $breakepoint1200) {
+            max-width: 400px;
+        }
+
+        @media (max-width: $breakepoint768) {
+            margin-bottom: 42px;
+        }
+
+        @media (max-width: $breakepoint480) {
+            margin-bottom: 32px;
+        }
     }
 
     &__list {
         display: flex;
         align-items: center;
         gap: 22px;
+        margin-bottom: 130px;
+
+        @media (max-width: $breakepoint768) {
+            margin-bottom: 70px;
+        }
+
+        @media (max-width: $breakepoint480) {
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 40px;
+        }
     }
 
     &__item {
         color: $blueBgColor;
-        margin-bottom: 130px;
 
         &:first-child {
             min-width: 144px;
@@ -65,10 +121,26 @@
         &:last-child:hover {
             text-decoration: underline;
         }
+
+        &:last-child {
+            @media (max-width: $breakepoint992) {
+                color: $whiteTextColor;
+                min-width: 144px;
+                min-height: 40px;
+                background: $blueBgColor;
+                border-radius: 4px;
+                padding: 13px 0;
+
+                &:hover {
+                    background-color: $darkenBlueBgColor;
+                }
+            }
+        }
     }
 
     &__link-item {
         padding-left: 23px;
+        white-space: nowrap;
     }
 
     &__link-img {
@@ -88,6 +160,17 @@
         display: flex;
         gap: 80px;
         margin-bottom: 196px;
+
+        @media (max-width: $breakepoint768) {
+            gap: 40px;
+            margin-bottom: 100px;
+        }
+
+        @media (max-width: $breakepoint480) {
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 50px;
+        }
     }
 
     &__numbers-daos {
@@ -98,6 +181,12 @@
         font-size: 36px;
         line-height: 36px;
         margin-bottom: 12px;
+
+        @media (max-width: $breakepoint480) {
+            font-size: 24px;
+            line-height: 24px;
+            margin-bottom: 8px;
+        }
     }
 
     &__name {
