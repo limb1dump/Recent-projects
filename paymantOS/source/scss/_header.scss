@@ -1,21 +1,67 @@
+.nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    background-color: $whiteTextColor;
+}
+
+.nav._scrolled {
+    box-shadow: 2px 2px 4px 2px rgba(207, 207, 207, 0.2);
+}
+
 .navbar {
     min-height: 72px;
     display: flex;
     justify-content: space-between;
     padding: 16px 0;
+    gap: 20px;
 
-    &__menu {
-        margin-bottom: 100px;
-
-        @media (max-width: $breakepoint768) {
-            margin-bottom: 50px;
-        }
+    &__burger {
+        display: none;
 
         @media (max-width: $breakepoint480) {
-            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
         }
     }
+
+    &__burger-field {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding: 10px;
+    }
+
+    &__burger-field._active {
+
+        .navbar__burger-line {
+
+            &:nth-child(2) {
+                opacity: 0;
+            }
+
+            &:nth-child(1) {
+                transform: translateY(9px) rotate(45deg);
+            }
+
+            &:nth-child(3) {
+                transform: translateY(-9px) rotate(-45deg);
+            }
+
+            transition: transform 0.4s ease;
+        }
+    }
+
+    &__burger-line {
+        width: 35px;
+        height: 4px;
+        background: $blackTextColor;
+        transition: all 0.4s ease;
+    }
 }
+
 
 .logo {
     &__image {
@@ -54,10 +100,10 @@
             background: $blueBgColor;
             border-radius: 4px;
             padding: 13px 20px;
-            transition: 0.3s all ease;
 
             &:hover {
                 background-color: $darkenBlueBgColor;
+                transition: 0.3s all ease;
 
                 a {
                     text-decoration: none;
@@ -79,6 +125,48 @@
     }
 
     @media (max-width: $breakepoint480) {
-        visibility: hidden;
+        display: none;
     }
+}
+
+.popup {
+    position: fixed;
+    top: 70px;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    margin: 10px auto;
+    background: $whiteTextColor;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    transition: 0.4s right ease-in;
+    padding-top: 50px;
+    padding-bottom: 70px;
+    overflow: auto;
+
+    .menu__list {
+        flex-direction: column;
+        font-size: 24px;
+        gap: 50px;
+
+        .menu__item {
+            display: flex;
+
+            img {
+                margin-right: 3px;
+            }
+        }
+
+        .menu__item_blue {
+            color: $blueBgColor;
+            background: none;
+            padding: 0;
+        }
+    }
+}
+
+.popup._open {
+    right: 0;
+    transition: 0.3s right ease-out;
 }

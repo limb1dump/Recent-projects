@@ -27,7 +27,7 @@
 
         @media (max-width: $breakepoint480) {
             max-width: 400px;
-            top: -30px;
+            top: 0px;
         }
     }
 }
@@ -35,6 +35,16 @@
 .dao {
     position: relative;
     z-index: 1;
+    margin-top: 172px;
+
+    @media (max-width: $breakepoint768) {
+        margin-top: 120px;
+    }
+
+    @media (max-width: $breakepoint480) {
+        margin-top: 90px;
+    }
+
 
     &__main-title {
         @include fontWeight(700);

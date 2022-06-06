@@ -1,12 +1,16 @@
+body {
+    font-family: 'Metropolis';
+    font-style: normal;
+}
+
+body._noscroll {
+    overflow: hidden;
+}
+
 .wrapper {
     max-width: 100%;
     overflow: hidden;
     color: $blackTextColor;
-}
-
-body {
-    font-family: 'Metropolis';
-    font-style: normal;
 }
 
 .container {
