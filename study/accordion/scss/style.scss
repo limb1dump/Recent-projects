@@ -1,0 +1,58 @@
+.wrapper {
+    max-width: 1080px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.accordion {
+
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        padding: 10px 20px;
+        color: white;
+        font-size: 48px;
+        background: rgb(76, 76, 76);
+
+        &.active,
+        &:hover {
+            cursor: pointer;
+            background: rgb(97, 47, 66);
+        }
+    }
+
+    &__icon {
+        transform: rotate(90deg);
+        transition: 0.4s all ease;
+
+        &.active {
+            transform: rotate(-90deg);
+        }
+    }
+
+
+
+    &__body {
+        font-size: 24px;
+        padding: 0 20px;
+        background: rgb(50, 129, 142);
+        max-height: 0px;
+        overflow: hidden;
+        transition: 0.3s all ease;
+
+        &.active {
+            max-height: 57px;
+        }
+    }
+
+    &__text {
+        display: inline-block;
+        padding: 15px 0;
+    }
+}
